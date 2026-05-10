@@ -125,6 +125,15 @@
     pointer-events: none;
     mix-blend-mode: overlay;
   }
+  @keyframes marquee-x {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  .animate-marquee { animation: marquee-x 40s linear infinite; }
+  .animate-marquee-slow { animation: marquee-x 60s linear infinite; }
+  .tilt-card { transform-style: preserve-3d; perspective: 1000px; }
+  .tilt-inner { transition: transform 0.4s cubic-bezier(.2,.8,.2,1); }
+  .tilt-card:hover .tilt-inner { transform: rotateX(4deg) rotateY(-6deg) translateZ(20px); }
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');

@@ -19,34 +19,34 @@ export const Route = createFileRoute("/about")({
 function About() {
   return (
     <>
-      <section className="relative pt-40 pb-24 overflow-hidden">
+      <section className="relative pt-32 sm:pt-40 pb-16 sm:pb-24 overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,oklch(0.72_0.21_45/0.25),transparent_60%)]" />
-        <div className="relative mx-auto max-w-5xl px-6 text-center">
+        <div className="relative mx-auto max-w-5xl px-4 sm:px-6 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-xs uppercase tracking-[0.3em] text-primary mb-4">Our Story</motion.div>
           <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
-            className="font-display text-5xl md:text-7xl font-bold leading-tight">
+            className="font-display text-4xl sm:text-5xl md:text-7xl font-bold leading-tight">
             Built by riders, <br /><span className="text-gradient">for the wild ones.</span>
           </motion.h1>
           <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}
-            className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto">
+            className="mt-4 sm:mt-6 text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
             Since 2021, Nomad Bikers Club has trained beginners, mentored advanced riders, and led convoys across India's most breathtaking terrains.
           </motion.p>
         </div>
       </section>
 
-      <section className="py-20">
-        <div className="mx-auto max-w-7xl px-6">
+      <section className="py-12 sm:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }}
-            className="rounded-[2.5rem] overflow-hidden shadow-elevated">
-            <img src={about} alt="Riders convoy" loading="lazy" className="w-full h-[60vh] object-cover" />
+            className="rounded-[1.5rem] sm:rounded-[2.5rem] overflow-hidden shadow-elevated">
+            <img src={about} alt="Riders convoy" loading="lazy" className="w-full h-[40vh] sm:h-[60vh] object-cover" />
           </motion.div>
         </div>
       </section>
 
       {/* TIMELINE */}
-      <section className="py-24">
-        <div className="mx-auto max-w-4xl px-6">
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-center mb-16">The Journey</h2>
+      <section className="py-16 sm:py-24">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-10 sm:mb-16">The Journey</h2>
           <div className="relative space-y-10">
             <div className="absolute left-3 top-2 bottom-2 w-px bg-gradient-to-b from-primary via-primary/30 to-transparent" />
             {[
@@ -69,10 +69,10 @@ function About() {
       </section>
 
       {/* VALUES */}
-      <section className="py-24">
-        <div className="mx-auto max-w-7xl px-6">
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-center mb-14">Our Values</h2>
-          <div className="grid md:grid-cols-4 gap-6">
+      <section className="py-16 sm:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-10 sm:mb-14">Our Values</h2>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {[
               { icon: Shield, t: "Safety First", d: "Gear checks, briefings, and certified leads on every ride." },
               { icon: Heart, t: "Passion", d: "We ride because we love it. Period." },

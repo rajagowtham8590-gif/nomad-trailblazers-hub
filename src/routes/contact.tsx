@@ -43,15 +43,15 @@ function Contact() {
 
   return (
     <>
-      <section className="pt-40 pb-12 text-center">
-        <div className="mx-auto max-w-3xl px-6">
+      <section className="pt-32 sm:pt-40 pb-10 sm:pb-12 text-center">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6">
           <div className="text-xs uppercase tracking-[0.3em] text-primary mb-3">Get in Touch</div>
-          <h1 className="font-display text-5xl md:text-7xl font-bold">Let's <span className="text-gradient">ride together.</span></h1>
+          <h1 className="font-display text-4xl sm:text-5xl md:text-7xl font-bold">Let's <span className="text-gradient">ride together.</span></h1>
         </div>
       </section>
 
-      <section className="py-16">
-        <div className="mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-10">
+      <section className="py-12 sm:py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 grid lg:grid-cols-2 gap-8 sm:gap-10">
           {/* Info */}
           <div className="space-y-4">
             {[
