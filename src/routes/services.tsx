@@ -28,31 +28,31 @@ const services = [
 function Services() {
   return (
     <>
-      <section className="pt-40 pb-16 text-center">
-        <div className="mx-auto max-w-3xl px-6">
+      <section className="pt-32 sm:pt-40 pb-12 sm:pb-16 text-center">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6">
           <div className="text-xs uppercase tracking-[0.3em] text-primary mb-4">Programs</div>
-          <h1 className="font-display text-5xl md:text-7xl font-bold">Train. Ride. <span className="text-gradient">Conquer.</span></h1>
-          <p className="mt-6 text-lg text-muted-foreground">Choose your path — every program is hands-on and led by certified mentors.</p>
+          <h1 className="font-display text-4xl sm:text-5xl md:text-7xl font-bold">Train. Ride. <span className="text-gradient">Conquer.</span></h1>
+          <p className="mt-4 sm:mt-6 text-base sm:text-lg text-muted-foreground">Choose your path — every program is hands-on and led by certified mentors.</p>
         </div>
       </section>
 
-      <section className="py-16">
-        <div className="mx-auto max-w-7xl px-6 grid md:grid-cols-2 gap-8">
+      <section className="py-12 sm:py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 grid md:grid-cols-2 gap-6 sm:gap-8">
           {services.map((s, i) => (
             <motion.div key={i} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}
               className="group relative overflow-hidden rounded-3xl glass shadow-elevated hover:shadow-glow transition-all">
               <div className="aspect-[16/9] overflow-hidden">
                 <img src={s.img} alt={s.t} loading="lazy" className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-700" />
               </div>
-              <div className="p-8">
-                <div className="flex items-start justify-between mb-4">
+              <div className="p-5 sm:p-8">
+                <div className="flex items-start justify-between gap-3 mb-4 flex-wrap">
                   <div className="inline-flex p-3 rounded-2xl bg-ember-gradient text-primary-foreground"><s.icon className="h-5 w-5" /></div>
                   <div className="flex gap-2">
                     <span className="inline-flex items-center gap-1 text-xs glass rounded-full px-3 py-1"><Clock className="h-3 w-3" /> {s.dur}</span>
                     <span className="inline-flex items-center gap-1 text-xs glass rounded-full px-3 py-1"><Award className="h-3 w-3" /> {s.level}</span>
                   </div>
                 </div>
-                <h3 className="font-display text-2xl font-bold">{s.t}</h3>
+                <h3 className="font-display text-xl sm:text-2xl font-bold">{s.t}</h3>
                 <p className="mt-2 text-muted-foreground">{s.d}</p>
                 <Link to="/booking" className="mt-6 inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-ember-gradient text-primary-foreground text-sm font-semibold hover:scale-105 transition">
                   Enroll <ArrowRight className="h-4 w-4" />
@@ -63,11 +63,11 @@ function Services() {
         </div>
       </section>
 
-      <section className="py-24">
-        <div className="mx-auto max-w-5xl px-6">
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-center mb-12">Course Structure</h2>
-          <div className="glass rounded-3xl p-8 md:p-12 shadow-elevated">
-            <div className="grid md:grid-cols-3 gap-8">
+      <section className="py-16 sm:py-24">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-10 sm:mb-12">Course Structure</h2>
+          <div className="glass rounded-3xl p-6 sm:p-8 md:p-12 shadow-elevated">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
               {[
                 { t: "Week 1", d: "Foundations: balance, posture, controls, low-speed manoeuvres." },
                 { t: "Week 2", d: "Traffic riding, defensive techniques, gear-shifting mastery." },
