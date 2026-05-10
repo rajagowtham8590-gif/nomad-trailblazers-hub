@@ -9,6 +9,7 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import { SiteShell } from "@/components/site/SiteShell";
 
 function NotFoundComponent() {
   return (
@@ -72,14 +73,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Nomad Bikers Club — Premium Riding Community in India" },
+      { name: "description", content: "Learn to ride, master the road, and explore India with Nomad Bikers Club. Bike & scooty training, beginner to advanced programs, and guided adventure trips." },
+      { name: "author", content: "Nomad Bikers Club" },
+      { property: "og:title", content: "Nomad Bikers Club" },
+      { property: "og:description", content: "Premium riding lessons & guided adventure trips across India." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
@@ -113,7 +113,7 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <Outlet />
+      <SiteShell />
     </QueryClientProvider>
   );
 }
