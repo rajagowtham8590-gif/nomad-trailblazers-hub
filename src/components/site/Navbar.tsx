@@ -1,9 +1,8 @@
 import { Link, useLocation } from "@tanstack/react-router";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Moon, Sun } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import logo from "@/assets/logo.jpeg";
-import { useTheme } from "./theme";
 
 const links = [
   { to: "/", label: "Home" },
@@ -17,7 +16,6 @@ const links = [
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  const { theme, toggle } = useTheme();
   const loc = useLocation();
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -51,9 +49,6 @@ export function Navbar() {
             ))}
           </nav>
           <div className="flex items-center gap-2">
-            <button onClick={toggle} aria-label="Toggle theme" className="p-2 rounded-full glass hover:shadow-glow transition">
-              {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-            </button>
             <Link to="/booking" className="hidden sm:inline-flex items-center px-5 py-2 rounded-full bg-ember-gradient text-primary-foreground text-sm font-semibold shadow-glow hover:scale-105 transition">
               Book Ride
             </Link>
@@ -66,7 +61,7 @@ export function Navbar() {
       <AnimatePresence>
         {open && (
           <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }}
-            className="lg:hidden mx-4 mt-2 glass rounded-2xl p-4 flex flex-col gap-1">
+            className="lg:hidden mx-4 mt-2 bg-black border border-border rounded-2xl p-4 flex flex-col gap-1 shadow-elevated">
             {links.map(l => (
               <Link key={l.to} to={l.to} className="px-4 py-3 rounded-xl hover:bg-secondary text-foreground">{l.label}</Link>
             ))}
