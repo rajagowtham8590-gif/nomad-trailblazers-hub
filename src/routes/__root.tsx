@@ -76,10 +76,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Nomad Bikers Club — Premium Riding Community in India" },
       { name: "description", content: "Learn to ride, master the road, and explore India with Nomad Bikers Club. Bike & scooty training, beginner to advanced programs, and guided adventure trips." },
       { name: "author", content: "Nomad Bikers Club" },
-      { property: "og:title", content: "Nomad Bikers Club" },
-      { property: "og:description", content: "Premium riding lessons & guided adventure trips across India." },
+      { property: "og:title", content: "Nomad Bikers Club — Premium Riding Community in India" },
+      { property: "og:description", content: "Learn to ride, master the road, and explore India with Nomad Bikers Club. Bike & scooty training, beginner to advanced programs, and guided adventure trips." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: "Nomad Bikers Club — Premium Riding Community in India" },
+      { name: "twitter:description", content: "Learn to ride, master the road, and explore India with Nomad Bikers Club. Bike & scooty training, beginner to advanced programs, and guided adventure trips." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/njKD6phpKmfj8xjd6zyqlAUk7ro2/social-images/social-1778513224331-WhatsApp_Image_2026-05-06_at_6.16.15_PM.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/njKD6phpKmfj8xjd6zyqlAUk7ro2/social-images/social-1778513224331-WhatsApp_Image_2026-05-06_at_6.16.15_PM.webp" },
     ],
     links: [
       {
