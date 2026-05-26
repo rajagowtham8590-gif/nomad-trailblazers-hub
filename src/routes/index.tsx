@@ -16,10 +16,10 @@ import about from "@/assets/about.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Nomad Bikers Club — Ride Free, Ride Together" },
-      { name: "description", content: "Premium riding lessons, beginner programs, and guided adventure trips across India." },
-      { property: "og:title", content: "Nomad Bikers Club" },
-      { property: "og:description", content: "Ride Free. Ride Together." },
+      { title: "Nomad Bikers Club — For Women, By Women" },
+      { name: "description", content: "India's first women-only riding community. Bike & scooty training, personal coaching and getaways — making the road an equal space for women." },
+      { property: "og:title", content: "Nomad Bikers Club — For Women, By Women" },
+      { property: "og:description", content: "Making the road an equal space for women." },
     ],
   }),
   component: Home,
@@ -67,30 +67,30 @@ function Home() {
         <motion.div style={{ opacity }} className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 h-full flex flex-col justify-center">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2, duration: 0.8 }}
             className="inline-flex items-center gap-2 self-start px-3 sm:px-4 py-1.5 rounded-full glass text-[10px] sm:text-xs uppercase tracking-[0.2em] sm:tracking-[0.25em] text-primary mb-4 sm:mb-6">
-            <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" /> Estd 2021 — India
+            <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" /> For Women, By Women — Estd 2021
           </motion.div>
           <motion.h1 initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.9 }}
             className="font-display text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[0.95] max-w-4xl">
-            Ride Free. <br /> <span className="text-gradient">Ride Together.</span>
+            Making the road <br /> <span className="text-gradient">an equal space.</span>
           </motion.h1>
           <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5, duration: 0.8 }}
             className="mt-4 sm:mt-6 max-w-xl text-base sm:text-lg text-muted-foreground">
-            From your first throttle twist to Himalayan passes — Nomad Bikers Club trains, guides and rides with you.
+            From your first throttle twist to confident highway rides — Nomad Bikers Club is India's women-only riding community. Trained by women, for women.
           </motion.p>
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.7, duration: 0.8 }}
             className="mt-8 sm:mt-10 flex flex-wrap gap-3 sm:gap-4">
             <Link to="/booking" className="group inline-flex items-center gap-2 px-5 sm:px-7 py-3 sm:py-4 rounded-full bg-ember-gradient text-primary-foreground font-semibold shadow-glow hover:scale-105 transition text-sm sm:text-base">
               Book Now <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition" />
             </Link>
-            <Link to="/services" className="inline-flex items-center gap-2 px-5 sm:px-7 py-3 sm:py-4 rounded-full glass font-semibold hover:shadow-glow transition text-sm sm:text-base">
-              <Play className="h-3.5 w-3.5" /> Explore Trips
+            <Link to="/careers" className="inline-flex items-center gap-2 px-5 sm:px-7 py-3 sm:py-4 rounded-full glass font-semibold hover:shadow-glow transition text-sm sm:text-base">
+              <Play className="h-3.5 w-3.5" /> Join Us
             </Link>
           </motion.div>
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1 }}
             className="mt-10 sm:mt-14 hidden sm:flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-muted-foreground">
-            <span className="inline-flex items-center gap-2"><Shield className="h-3.5 w-3.5 text-primary" /> Certified instructors</span>
-            <span className="inline-flex items-center gap-2"><Wrench className="h-3.5 w-3.5 text-primary" /> Mechanic-backed convoys</span>
-            <span className="inline-flex items-center gap-2"><Award className="h-3.5 w-3.5 text-primary" /> 4.9★ rated</span>
+            <span className="inline-flex items-center gap-2"><Shield className="h-3.5 w-3.5 text-primary" /> Women-only batches</span>
+            <span className="inline-flex items-center gap-2"><Users className="h-3.5 w-3.5 text-primary" /> 5,000+ women trained</span>
+            <span className="inline-flex items-center gap-2"><Award className="h-3.5 w-3.5 text-primary" /> Across 24+ cities</span>
           </motion.div>
         </motion.div>
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2 }}
@@ -100,11 +100,11 @@ function Home() {
         </motion.div>
       </section>
 
-      {/* PARTNERS / GEAR MARQUEE */}
+      {/* CITIES MARQUEE */}
       <section className="py-8 border-y border-border bg-secondary/30 overflow-hidden">
         <div className="flex gap-12 animate-marquee whitespace-nowrap text-muted-foreground/70">
           {[...Array(2)].flatMap((_, k) => (
-            ["Royal Enfield", "KTM", "Bajaj", "TVS", "Honda", "Yamaha", "Hero", "Suzuki", "BMW Motorrad", "Triumph"].map((b, i) => (
+            ["Bangalore", "Chennai", "Pune", "Mumbai", "Coimbatore", "Hyderabad", "Trivandrum", "Kochi", "Mysore", "Vizag", "Erode"].map((b, i) => (
               <span key={`${k}-${i}`} className="font-display text-xl sm:text-2xl tracking-widest">{b}</span>
             ))
           ))}
@@ -115,9 +115,9 @@ function Home() {
       <section className="relative py-16 sm:py-20 border-b border-border">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-center">
           {[
-            { n: 5000, s: "+", l: "Riders Trained" },
-            { n: 120, s: "+", l: "Guided Trips" },
-            { n: 50, s: "k", l: "Kilometres" },
+            { n: 5000, s: "+", l: "Women Trained" },
+            { n: 24, s: "+", l: "Cities" },
+            { n: 100, s: "+", l: "New Bikers" },
             { n: 4.9, s: "★", l: "Avg. Rating", float: true },
           ].map((s, i) => (
             <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}>
@@ -133,12 +133,12 @@ function Home() {
       {/* SERVICES */}
       <section className="relative py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <SectionHeader eyebrow="What We Do" title="Built for every rider" desc="From the first wobble to the last switchback." />
+          <SectionHeader eyebrow="What We Do" title="Crafted for every woman" desc="From the first wobble to confident highway riding." />
           <div className="mt-10 sm:mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
             {[
-              { icon: Bike, t: "Riding Lessons", d: "Master clutch, balance and control with certified trainers.", img: lessons },
-              { icon: Gauge, t: "Scooty Training", d: "Beginner-friendly scooter classes for daily commute confidence.", img: scooty },
-              { icon: Mountain, t: "Guided Trips", d: "Curated convoys through India's most legendary roads.", img: trips },
+              { icon: Bike, t: "Beginner Training Batch", d: "Group of 5 — 20 hours over 4 days. Start from zero with confidence.", img: lessons },
+              { icon: Gauge, t: "Scooty / Bike Personal Training", d: "1-on-1 sessions at a location you choose. 2 hours/day for 7 days.", img: scooty },
+              { icon: Mountain, t: "Getaways", d: "Women-only rides to a new location every 3 months.", img: trips },
             ].map((s, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
                 className="group tilt-card relative overflow-hidden rounded-3xl glass shadow-elevated">
@@ -166,17 +166,17 @@ function Home() {
       {/* DESTINATIONS */}
       <section className="relative py-20 sm:py-28 border-t border-border">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <SectionHeader eyebrow="Destinations" title="Where the road takes us" desc="Hand-picked routes across the subcontinent." />
+          <SectionHeader eyebrow="Cities We Ride In" title="A community across India" desc="Find a Nomad batch near you — and a new getaway every 3 months." />
           <div className="mt-10 sm:mt-14 grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5">
             {[
-              { name: "Spiti Valley", days: "9 Days", img: trips, d: "High-altitude desert" },
-              { name: "Ladakh", days: "12 Days", img: hero, d: "The legendary loop" },
-              { name: "Western Ghats", days: "4 Days", img: about, d: "Misty switchbacks" },
-              { name: "Coorg & Ooty", days: "3 Days", img: advanced, d: "Coffee country curves" },
-              { name: "Goa Coastal", days: "5 Days", img: lessons, d: "Sea breeze sprints" },
-              { name: "Rann of Kutch", days: "6 Days", img: scooty, d: "White desert magic" },
-              { name: "Meghalaya", days: "7 Days", img: trips, d: "Living-root jungles" },
-              { name: "Rajasthan", days: "8 Days", img: hero, d: "Forts & dunes" },
+              { name: "Bangalore", days: "Active", img: trips, d: "Flagship batches" },
+              { name: "Chennai", days: "Active", img: hero, d: "Beginner & PT" },
+              { name: "Pune", days: "Active", img: about, d: "Weekend batches" },
+              { name: "Mumbai", days: "Active", img: advanced, d: "Personal training" },
+              { name: "Coimbatore", days: "Active", img: lessons, d: "Group & PT" },
+              { name: "Hyderabad", days: "Active", img: scooty, d: "Beginner batches" },
+              { name: "Kochi", days: "Active", img: trips, d: "1-on-1 coaching" },
+              { name: "Mysore · Vizag · Erode", days: "Active", img: hero, d: "& more across India" },
             ].map((d, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: (i % 4) * 0.07 }}
                 className="group relative overflow-hidden rounded-2xl sm:rounded-3xl aspect-[3/4]">
@@ -184,7 +184,7 @@ function Home() {
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
                 <div className="absolute inset-x-0 bottom-0 p-3 sm:p-5">
                   <div className="text-[10px] sm:text-xs uppercase tracking-widest text-primary mb-1 inline-flex items-center gap-1">
-                    <Calendar className="h-3 w-3" /> {d.days}
+                    <MapPin className="h-3 w-3" /> {d.days}
                   </div>
                   <div className="font-display text-base sm:text-xl font-bold">{d.name}</div>
                   <div className="text-[11px] sm:text-xs text-muted-foreground">{d.d}</div>
@@ -201,10 +201,10 @@ function Home() {
           <SectionHeader eyebrow="The Process" title="From sign-up to sunset ride" desc="Four simple steps to get rolling." />
           <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {[
-              { n: "01", icon: Calendar, t: "Reserve", d: "Pick a program or trip and lock your seat in seconds." },
-              { n: "02", icon: Users, t: "Onboard", d: "Briefing call, gear checklist and skill assessment." },
-              { n: "03", icon: Wrench, t: "Train / Prep", d: "Hands-on training or convoy prep with mentors." },
-              { n: "04", icon: MapPin, t: "Ride", d: "Hit the road with a tight crew and full support." },
+              { n: "01", icon: Calendar, t: "Book a Batch", d: "Pick beginner training, PT or a getaway and lock your spot." },
+              { n: "02", icon: Users, t: "Meet Your Trainer", d: "Briefing call with a certified woman trainer near you." },
+              { n: "03", icon: Wrench, t: "Learn to Ride", d: "Hands-on practice — patient, supportive, judgement-free." },
+              { n: "04", icon: MapPin, t: "Own the Road", d: "Graduate as a confident rider and join our getaways." },
             ].map((s, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}
                 className="relative glass rounded-3xl p-6 hover:shadow-glow transition">
@@ -228,30 +228,30 @@ function Home() {
               <img src={advanced} alt="Advanced rider" loading="lazy" className="w-full h-[360px] sm:h-[460px] md:h-[520px] object-cover" />
               <div className="absolute inset-0 bg-gradient-to-tr from-background/60 to-transparent" />
               <div className="absolute bottom-4 sm:bottom-6 left-4 right-4 sm:left-6 sm:right-6 glass rounded-2xl p-4">
-                <div className="text-[10px] sm:text-xs uppercase tracking-widest text-primary">Featured Trip</div>
-                <div className="font-display text-xl sm:text-2xl font-bold mt-1">Spiti Valley Expedition</div>
+                <div className="text-[10px] sm:text-xs uppercase tracking-widest text-primary">Next Getaway</div>
+                <div className="font-display text-xl sm:text-2xl font-bold mt-1">A new destination — every 3 months</div>
                 <div className="mt-2 flex flex-wrap gap-2 text-[11px]">
-                  <span className="glass rounded-full px-2.5 py-1">9 Days</span>
-                  <span className="glass rounded-full px-2.5 py-1">2,400 km</span>
-                  <span className="glass rounded-full px-2.5 py-1">Intermediate+</span>
+                  <span className="glass rounded-full px-2.5 py-1">Women-only</span>
+                  <span className="glass rounded-full px-2.5 py-1">All-levels</span>
+                  <span className="glass rounded-full px-2.5 py-1">Curated routes</span>
                 </div>
               </div>
             </div>
           </motion.div>
           <motion.div initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
             <div className="text-xs uppercase tracking-[0.3em] text-primary mb-4">Why Choose Us</div>
-            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">A community that rides with purpose.</h2>
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">A sisterhood that rides with purpose.</h2>
             <p className="mt-4 sm:mt-6 text-muted-foreground">
-              Certified trainers, mechanic-backed convoys, premium gear support, and routes designed by riders who've ridden them.
+              Women trainers, judgement-free batches, gear guidance, and a community of riders who lift each other up.
             </p>
             <ul className="mt-6 sm:mt-8 grid sm:grid-cols-2 gap-3">
               {[
-                { i: Shield, t: "Certified instructors" },
-                { i: Wrench, t: "Mechanic-backed convoys" },
-                { i: Headphones, t: "24/7 trip support" },
-                { i: Compass, t: "Curated routes" },
-                { i: Fuel, t: "Fuel & logistics planned" },
-                { i: Award, t: "Certified completion" },
+                { i: Shield, t: "Women trainers only" },
+                { i: Users, t: "Small group batches of 5" },
+                { i: Headphones, t: "1-on-1 personal training" },
+                { i: Compass, t: "Getaways every 3 months" },
+                { i: Award, t: "5,000+ women graduated" },
+                { i: MapPin, t: "24+ cities across India" },
               ].map((f, i) => (
                 <li key={i} className="flex items-center gap-3 glass rounded-xl px-3 py-2.5 text-sm">
                   <f.i className="h-4 w-4 text-primary shrink-0" /> {f.t}
@@ -259,7 +259,7 @@ function Home() {
               ))}
             </ul>
             <Link to="/about" className="mt-8 sm:mt-10 inline-flex items-center gap-2 px-6 py-3 rounded-full glass font-semibold hover:shadow-glow transition">
-              About the club <ArrowRight className="h-4 w-4" />
+              Our Story <ArrowRight className="h-4 w-4" />
             </Link>
           </motion.div>
         </div>
@@ -268,12 +268,12 @@ function Home() {
       {/* TESTIMONIALS PREVIEW */}
       <section className="py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <SectionHeader eyebrow="Voices" title="Loved by riders across India" desc="" />
+          <SectionHeader eyebrow="Nomad Stories" title="Loved by women across India" desc="Real voices from riders who learnt with us." />
           <div className="mt-10 sm:mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
             {[
-              { n: "Arjun R.", t: "Best riding club I've joined. The Spiti trip was a life-changing experience." },
-              { n: "Priya S.", t: "Learnt scooty as a complete beginner — patient trainers and a safe environment." },
-              { n: "Rahul K.", t: "Their convoys are organized to perfection. Will ride with Nomad again and again." },
+              { n: "Priya S.", t: "Learnt scooty as a complete beginner — patient trainers and a truly safe space for women." },
+              { n: "Sneha I.", t: "From scared of the throttle to riding solo in 7 days. The personal training is unmatched." },
+              { n: "Aditi M.", t: "Found a sisterhood here. The getaways are unforgettable — women supporting women on the road." },
             ].map((r, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
                 className="glass rounded-3xl p-6 sm:p-7 shadow-elevated">
@@ -290,7 +290,7 @@ function Home() {
             ))}
           </div>
           <div className="mt-10 text-center">
-            <Link to="/testimonials" className="inline-flex items-center gap-2 text-primary font-semibold">See all reviews <ArrowRight className="h-4 w-4" /></Link>
+            <Link to="/testimonials" className="inline-flex items-center gap-2 text-primary font-semibold">Read all Nomad Stories <ArrowRight className="h-4 w-4" /></Link>
           </div>
         </div>
       </section>
@@ -301,12 +301,12 @@ function Home() {
           <SectionHeader eyebrow="FAQ" title="Common questions" desc="Everything you need before signing up." />
           <div className="mt-10 space-y-3">
             {[
-              { q: "Do I need my own bike?", a: "Not for training — we provide certified training bikes and scooters. Trips require your own roadworthy bike, or we can help you arrange a rental." },
-              { q: "What if I've never ridden before?", a: "Perfect — most of our students start from zero. The 10-day Beginner program takes you from balance to confident street riding." },
-              { q: "How safe are the Himalayan trips?", a: "Every convoy includes certified lead riders, a mechanic, a backup vehicle and 24/7 support. Daily briefings and gear checks are mandatory." },
-              { q: "What gear is required?", a: "Helmet (ISI certified), riding jacket, gloves, knee guards and ankle-high boots. We have rental gear available at our base." },
-              { q: "Are women solo riders welcome?", a: "Absolutely. ~30% of our community is women riders, and we run women-only batches on request." },
-              { q: "Cancellation & refund policy?", a: "Free cancellation up to 14 days before departure. Within 14 days, partial credit toward a future trip." },
+              { q: "Is this only for women?", a: "Yes — Nomad Bikers Club is a women-only riding community. All our trainers and batches are exclusively for women." },
+              { q: "Do I need my own bike?", a: "Not for training — we provide training scooters and bikes. For getaways you can bring your own or rent locally." },
+              { q: "What if I've never ridden anything before?", a: "Our Beginner Training Batch starts from absolute zero. 20 hours across 4 days in a group of 5." },
+              { q: "How is Personal Training different?", a: "PT is 1-on-1 with a trainer at a location you choose — 2 hours/day for 7 days. Perfect if you prefer privacy or a custom pace." },
+              { q: "What are the Getaways?", a: "Women-only group rides to a new destination every 3 months. Routes are curated and beginner-friendly." },
+              { q: "Which cities do you operate in?", a: "Bangalore, Chennai, Pune, Mumbai, Coimbatore, Hyderabad, Trivandrum, Kochi, Mysore, Vizag, Erode and more — 24+ cities." },
             ].map((f, i) => <FaqItem key={i} q={f.q} a={f.a} i={i} />)}
           </div>
         </div>
@@ -342,12 +342,12 @@ function Home() {
       <section className="py-20 sm:py-28">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
           <div className="relative overflow-hidden rounded-[2rem] sm:rounded-[2.5rem] p-8 sm:p-12 md:p-20 text-center glass shadow-elevated">
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,oklch(0.72_0.21_45/0.25),transparent_70%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,oklch(0.88_0.19_95/0.25),transparent_70%)]" />
             <div className="relative">
-              <h2 className="font-display text-3xl sm:text-4xl md:text-6xl font-bold">Your road is waiting.</h2>
-              <p className="mt-3 sm:mt-4 text-muted-foreground max-w-xl mx-auto text-sm sm:text-base">Book a session or join the next convoy. Slots fill up fast.</p>
+              <h2 className="font-display text-3xl sm:text-4xl md:text-6xl font-bold">The road is yours. Take it.</h2>
+              <p className="mt-3 sm:mt-4 text-muted-foreground max-w-xl mx-auto text-sm sm:text-base">Book a training batch, a personal session or join the next getaway. Slots fill up fast.</p>
               <Link to="/booking" className="mt-6 sm:mt-8 inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-ember-gradient text-primary-foreground font-semibold shadow-glow hover:scale-105 transition">
-                Reserve your seat <ArrowRight className="h-4 w-4" />
+                Book your spot <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
           </div>
