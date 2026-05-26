@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
-import { Bike, Gauge, Mountain, GraduationCap, ArrowRight, Clock, Award } from "lucide-react";
+import { Bike, Gauge, Mountain, GraduationCap, ArrowRight, Clock, Users } from "lucide-react";
 import lessons from "@/assets/lessons.jpg";
 import scooty from "@/assets/scooty.jpg";
 import advanced from "@/assets/advanced.jpg";
@@ -10,19 +10,19 @@ export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
       { title: "Services — Nomad Bikers Club" },
-      { name: "description", content: "Bike & scooty training, beginner to advanced programs, and guided trips." },
-      { property: "og:title", content: "Riding Services & Programs" },
-      { property: "og:description", content: "Choose a structured program — beginner to expert." },
+      { name: "description", content: "Women-only bike and scooty training: Beginner Batch, Personal Training, Regular Batch, and Getaways every 3 months." },
+      { property: "og:title", content: "Training & Getaways — For Women" },
+      { property: "og:description", content: "Four programs, every one crafted for women riders." },
     ],
   }),
   component: Services,
 });
 
 const services = [
-  { icon: Bike, t: "Bike Riding Lessons", d: "From clutch control to highway confidence — fully structured curriculum.", img: lessons, dur: "10 days", level: "Beginner" },
-  { icon: Gauge, t: "Scooty Training", d: "Stress-free scooter classes with patient instructors.", img: scooty, dur: "5 days", level: "Beginner" },
-  { icon: GraduationCap, t: "Beginner to Advanced", d: "Progressive program covering balance, cornering, defensive riding.", img: advanced, dur: "4 weeks", level: "All levels" },
-  { icon: Mountain, t: "Guided Bike Trips", d: "Convoy expeditions across the Himalayas, Western Ghats, and beyond.", img: trips, dur: "3-12 days", level: "Intermediate+" },
+  { icon: Bike, t: "Beginner Training Batch", d: "Group of 5 women, 20 hours of training spread across 4 days. Start from zero — no prior riding experience needed.", img: lessons, dur: "20 hrs / 4 days", level: "Group of 5" },
+  { icon: Gauge, t: "Scooty / Bike Personal Training", d: "1-on-1 training at a comfortable location of your choice. 2 hours per day for 7 days — at your own pace.", img: scooty, dur: "2 hrs × 7 days", level: "1-on-1" },
+  { icon: GraduationCap, t: "Regular Training Batch", d: "3-hour group sessions for women who are already comfortable on a scooty and want to refine their skills.", img: advanced, dur: "3 hours", level: "Group of 5" },
+  { icon: Mountain, t: "Getaways", d: "Women-only group rides to a new destination every 3 months. Curated routes, all-levels welcome.", img: trips, dur: "Every 3 months", level: "Women-only" },
 ];
 
 function Services() {
@@ -30,9 +30,9 @@ function Services() {
     <>
       <section className="pt-32 sm:pt-40 pb-12 sm:pb-16 text-center">
         <div className="mx-auto max-w-3xl px-4 sm:px-6">
-          <div className="text-xs uppercase tracking-[0.3em] text-primary mb-4">Programs</div>
-          <h1 className="font-display text-4xl sm:text-5xl md:text-7xl font-bold">Train. Ride. <span className="text-gradient">Conquer.</span></h1>
-          <p className="mt-4 sm:mt-6 text-base sm:text-lg text-muted-foreground">Choose your path — every program is hands-on and led by certified mentors.</p>
+          <div className="text-xs uppercase tracking-[0.3em] text-primary mb-4">For Women, By Women</div>
+          <h1 className="font-display text-4xl sm:text-5xl md:text-7xl font-bold">Crafted for <span className="text-gradient">every woman.</span></h1>
+          <p className="mt-4 sm:mt-6 text-base sm:text-lg text-muted-foreground">Four programs — beginner batches, 1-on-1 personal training, regular practice, and getaways. All led by women trainers.</p>
         </div>
       </section>
 
@@ -49,13 +49,13 @@ function Services() {
                   <div className="inline-flex p-3 rounded-2xl bg-ember-gradient text-primary-foreground"><s.icon className="h-5 w-5" /></div>
                   <div className="flex gap-2">
                     <span className="inline-flex items-center gap-1 text-xs glass rounded-full px-3 py-1"><Clock className="h-3 w-3" /> {s.dur}</span>
-                    <span className="inline-flex items-center gap-1 text-xs glass rounded-full px-3 py-1"><Award className="h-3 w-3" /> {s.level}</span>
+                    <span className="inline-flex items-center gap-1 text-xs glass rounded-full px-3 py-1"><Users className="h-3 w-3" /> {s.level}</span>
                   </div>
                 </div>
                 <h3 className="font-display text-xl sm:text-2xl font-bold">{s.t}</h3>
                 <p className="mt-2 text-muted-foreground">{s.d}</p>
                 <Link to="/booking" className="mt-6 inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-ember-gradient text-primary-foreground text-sm font-semibold hover:scale-105 transition">
-                  Enroll <ArrowRight className="h-4 w-4" />
+                  Book Now <ArrowRight className="h-4 w-4" />
                 </Link>
               </div>
             </motion.div>
@@ -65,16 +65,16 @@ function Services() {
 
       <section className="py-16 sm:py-24">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
-          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-10 sm:mb-12">Course Structure</h2>
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-10 sm:mb-12">What we cover</h2>
           <div className="glass rounded-3xl p-6 sm:p-8 md:p-12 shadow-elevated">
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
               {[
-                { t: "Week 1", d: "Foundations: balance, posture, controls, low-speed manoeuvres." },
-                { t: "Week 2", d: "Traffic riding, defensive techniques, gear-shifting mastery." },
-                { t: "Week 3", d: "Cornering, braking dynamics, highway riding." },
-                { t: "Week 4", d: "Off-road basics, emergency handling, certification ride." },
-                { t: "Trip Prep", d: "Convoy etiquette, navigation, mechanical basics, gear setup." },
-                { t: "Expedition", d: "Multi-day guided ride with mechanic & support van." },
+                { t: "Day 1", d: "Balance, posture, controls — getting comfortable with the machine." },
+                { t: "Day 2", d: "Low-speed manoeuvres, throttle control, basic braking." },
+                { t: "Day 3", d: "Traffic awareness, defensive riding, gear-shifting (for geared bikes)." },
+                { t: "Day 4", d: "Real-road practice, parking, U-turns, confidence ride." },
+                { t: "PT Add-ons", d: "Custom routes, your own scooty/bike, comfortable home base." },
+                { t: "Getaways", d: "Women-only group ride — new destination every 3 months." },
               ].map((p, i) => (
                 <div key={i} className="border-l-2 border-primary/40 pl-4">
                   <div className="text-xs uppercase tracking-widest text-primary">{p.t}</div>

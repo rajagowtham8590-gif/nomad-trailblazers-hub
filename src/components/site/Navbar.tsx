@@ -9,7 +9,8 @@ const links = [
   { to: "/about", label: "About" },
   { to: "/services", label: "Services" },
   { to: "/booking", label: "Booking" },
-  { to: "/testimonials", label: "Reviews" },
+  { to: "/testimonials", label: "Nomad Stories" },
+  { to: "/careers", label: "Careers" },
   { to: "/contact", label: "Contact" },
 ];
 
@@ -47,6 +48,10 @@ export function Navbar() {
                 {l.label}
               </Link>
             ))}
+            <a href="https://thenomadsforge.com" target="_blank" rel="noreferrer"
+              className="px-4 py-2 rounded-full text-sm text-muted-foreground hover:text-foreground transition-colors">
+              Shop
+            </a>
           </nav>
           <div className="flex items-center gap-2">
             <Link to="/booking" className="hidden sm:inline-flex items-center px-5 py-2 rounded-full bg-ember-gradient text-primary-foreground text-sm font-semibold shadow-glow hover:scale-105 transition">
@@ -65,6 +70,7 @@ export function Navbar() {
             {links.map(l => (
               <Link key={l.to} to={l.to} className="px-4 py-3 rounded-xl hover:bg-secondary text-foreground">{l.label}</Link>
             ))}
+            <a href="https://thenomadsforge.com" target="_blank" rel="noreferrer" className="px-4 py-3 rounded-xl hover:bg-secondary text-foreground">Shop</a>
             <Link to="/booking" className="mt-2 px-4 py-3 rounded-xl bg-ember-gradient text-primary-foreground text-center font-semibold">Book Ride</Link>
           </motion.div>
         )}

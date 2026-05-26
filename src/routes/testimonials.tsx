@@ -5,24 +5,24 @@ import { Star, Quote } from "lucide-react";
 export const Route = createFileRoute("/testimonials")({
   head: () => ({
     meta: [
-      { title: "Reviews — Nomad Bikers Club" },
-      { name: "description", content: "Real stories from riders who trained and travelled with Nomad Bikers Club." },
-      { property: "og:title", content: "Rider Reviews" },
-      { property: "og:description", content: "Loved by riders across India." },
+      { title: "The Nomad Stories — Nomad Bikers Club" },
+      { name: "description", content: "Real stories from women who learnt to ride with Nomad Bikers Club." },
+      { property: "og:title", content: "The Nomad Stories" },
+      { property: "og:description", content: "Loved by women across India." },
     ],
   }),
   component: Testimonials,
 });
 
 const reviews = [
-  { n: "Arjun Reddy", t: "Best riding club I've joined. The Spiti expedition was life-changing — flawlessly organized.", r: 5 },
-  { n: "Priya Sharma", t: "Learnt scooty as a complete beginner. Patient instructors and a safe environment.", r: 5 },
-  { n: "Rahul Khanna", t: "Their convoys are precision-organized. Will ride with Nomad again and again.", r: 5 },
-  { n: "Sneha Iyer", t: "From shaky beginner to confident rider in 4 weeks. The structured program works.", r: 5 },
-  { n: "Vikram Singh", t: "Mechanic-backed convoys give such peace of mind on long trips. Highly recommend.", r: 5 },
-  { n: "Aditi Mehta", t: "The community is so welcoming. Made friends for life on my first guided ride.", r: 5 },
-  { n: "Karan Joshi", t: "Top-notch trainers. They focus on safety without making it boring.", r: 5 },
-  { n: "Neha Patil", t: "Loved the Western Ghats convoy — well-paced, scenic and unforgettable.", r: 5 },
+  { n: "Priya Sharma", t: "Learnt scooty as a complete beginner. Patient women trainers and a truly safe environment — I never felt judged once.", r: 5 },
+  { n: "Sneha Iyer", t: "From shaky beginner to confident rider in 4 days. The all-women batch made all the difference.", r: 5 },
+  { n: "Aditi Mehta", t: "The community is so welcoming. Made friends for life on my first Nomad getaway.", r: 5 },
+  { n: "Neha Patil", t: "Personal Training was perfect for me — 2 hours a day, near my home, at my own pace.", r: 5 },
+  { n: "Kavya R.", t: "I'm 42 and always wanted to learn. Nomad finally made it possible. Forever grateful.", r: 5 },
+  { n: "Divya N.", t: "The trainers are women who get it. They've been where you are, and they've got your back.", r: 5 },
+  { n: "Anjali V.", t: "Loved the getaway — well-paced, scenic, and a beautiful group of women riders.", r: 5 },
+  { n: "Meera K.", t: "Booked the Regular Batch to polish my skills. Walked out 10x more confident on the road.", r: 5 },
 ];
 
 function Card({ r, i }: { r: typeof reviews[number]; i: number }) {
@@ -47,8 +47,9 @@ function Testimonials() {
     <>
       <section className="pt-40 pb-12 text-center">
         <div className="mx-auto max-w-3xl px-6">
-          <div className="text-xs uppercase tracking-[0.3em] text-primary mb-3">Reviews</div>
-          <h1 className="font-display text-5xl md:text-7xl font-bold">Loved by <span className="text-gradient">riders.</span></h1>
+          <div className="text-xs uppercase tracking-[0.3em] text-primary mb-3">The Nomad Stories</div>
+          <h1 className="font-display text-5xl md:text-7xl font-bold">Loved by <span className="text-gradient">women.</span></h1>
+          <p className="mt-4 text-muted-foreground">Real stories from women who learnt to ride with us.</p>
           <div className="mt-6 inline-flex items-center gap-3 glass rounded-full px-5 py-3">
             <div className="flex gap-0.5">{Array.from({ length: 5 }).map((_, j) => <Star key={j} className="h-4 w-4 fill-primary text-primary" />)}</div>
             <span className="font-semibold">4.9 / 5</span>
