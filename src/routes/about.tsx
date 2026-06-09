@@ -43,6 +43,30 @@ function About() {
         </div>
       </section>
 
+      {/* FROM A DREAM TO A MOVEMENT */}
+      <section className="py-16 sm:py-24">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 text-center">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
+            className="text-xs uppercase tracking-[0.3em] text-primary mb-4">Our Story</motion.div>
+          <motion.h2 initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}
+            className="font-display text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+            From a Dream to a Movement
+          </motion.h2>
+          <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }}
+            className="mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed">
+            What began as a small group of women riders determined to create a safe and supportive learning environment has grown into one of India's leading women-focused motorcycle communities.
+          </motion.p>
+          <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.3 }}
+            className="mt-4 text-base sm:text-lg text-muted-foreground leading-relaxed">
+            Over the years, we've helped thousands of women take their first ride, overcome their fears, and discover the confidence and independence that motorcycling brings. From beginner training programs and personal coaching to women-only rides and getaways, every step of our journey has been shaped by the women who chose to embrace the road ahead.
+          </motion.p>
+          <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.4 }}
+            className="mt-4 text-base sm:text-lg text-muted-foreground leading-relaxed">
+            Today, with 5,000+ women trained across 24+ cities, Nomad Bikers Club is more than a riding school, it's a community that empowers women to ride, explore, and grow together.
+          </motion.p>
+        </div>
+      </section>
+
       {/* TIMELINE */}
       <section className="py-16 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
@@ -76,7 +100,7 @@ function About() {
             {[
               { icon: Shield, t: "Safe Space", d: "Women trainers, women batches, zero judgement." },
               { icon: Heart, t: "Patience", d: "Everyone learns at their own pace. We meet you there." },
-              { icon: Users, t: "Sisterhood", d: "A community of women who lift each other up — on and off the road." },
+              { icon: Users, t: "Community", d: "Women who empower, support, and inspire each other—on and off the road." },
               { icon: Compass, t: "Equality", d: "The road belongs to everyone. We're making sure women take their share." },
             ].map((v, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}

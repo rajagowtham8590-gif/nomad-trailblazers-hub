@@ -74,7 +74,7 @@ function Careers() {
         <div className="mx-auto max-w-5xl px-4 sm:px-6 grid sm:grid-cols-3 gap-4">
           {[
             { i: Heart, t: "Do work that matters", d: "Empower women to take the road on their own terms." },
-            { i: Users, t: "Join a sisterhood", d: "A tight-knit community of women trainers across 24+ cities." },
+            { i: Users, t: "Find Your Tribe.", d: "A tight-knit community of women trainers across 24+ cities." },
             { i: Compass, t: "Flexible & rewarding", d: "Schedule batches and PT sessions around your life." },
           ].map((v, i) => (
             <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}
