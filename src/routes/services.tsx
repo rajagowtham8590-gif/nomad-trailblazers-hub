@@ -63,28 +63,6 @@ function Services() {
         </div>
       </section>
 
-      <section className="py-16 sm:py-24">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6">
-          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-10 sm:mb-12">What we cover</h2>
-          <div className="glass rounded-3xl p-6 sm:p-8 md:p-12 shadow-elevated">
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
-              {[
-                { t: "Day 1", d: "Balance, posture, controls — getting comfortable with the machine." },
-                { t: "Day 2", d: "Low-speed manoeuvres, throttle control, basic braking." },
-                { t: "Day 3", d: "Traffic awareness, defensive riding, gear-shifting (for geared bikes)." },
-                { t: "Day 4", d: "Real-road practice, parking, U-turns, confidence ride." },
-                { t: "PT Add-ons", d: "Custom routes, your own scooty/bike, comfortable home base." },
-                { t: "Getaways", d: "Women-only group ride — new destination every 3 months." },
-              ].map((p, i) => (
-                <div key={i} className="border-l-2 border-primary/40 pl-4">
-                  <div className="text-xs uppercase tracking-widest text-primary">{p.t}</div>
-                  <p className="mt-2 text-sm text-muted-foreground">{p.d}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
     </>
   );
 }

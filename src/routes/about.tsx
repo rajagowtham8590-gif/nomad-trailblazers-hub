@@ -91,6 +91,41 @@ function About() {
           </div>
         </div>
       </section>
+
+      {/* TEAM */}
+      <section className="py-16 sm:py-24 border-t border-border">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+          <div className="text-center mb-10 sm:mb-14">
+            <div className="text-xs uppercase tracking-[0.3em] text-primary mb-3">The Team</div>
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold">Meet the women behind the wheel</h2>
+            <p className="mt-3 sm:mt-4 text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base">
+              Riders, trainers and mentors leading Nomad Bikers Club across India.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 max-w-5xl mx-auto">
+            {[
+              { n: "Maya", r: "Founder & Lead Trainer" },
+              { n: "Deepika", r: "Trainer & Community Lead" },
+              { n: "Jayshree", r: "Trainer & Getaways Curator" },
+            ].map((m, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.08 }}
+                className="glass rounded-3xl p-6 sm:p-8 text-center hover:shadow-glow transition"
+              >
+                <div className="mx-auto h-20 w-20 rounded-full bg-ember-gradient flex items-center justify-center font-display text-3xl font-bold text-primary-foreground shadow-glow">
+                  {m.n[0]}
+                </div>
+                <div className="font-display text-xl font-bold mt-5">{m.n}</div>
+                <div className="text-sm text-primary mt-1">{m.r}</div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
     </>
   );
 }
