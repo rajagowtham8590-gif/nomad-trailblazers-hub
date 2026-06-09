@@ -136,9 +136,6 @@ function Home() {
           <SectionHeader eyebrow="What We Do" title="Crafted for every woman" desc="From the first wobble to confident highway riding." />
           <div className="mt-10 sm:mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
             {[
-              { icon: GaugeIconReplaced(), t: "" } as never,
-            ].length === 0 && null}
-            {[
               { icon: Gauge, t: "Regular Training Batch", d: "3-hour group sessions for women already comfortable on a scooty — refine your skills.", img: advanced },
               { icon: Bike, t: "Beginner Training Batch", d: "Group of 5 — 20 hours over 4 days. Start from zero with confidence.", img: lessons },
               { icon: Mountain, t: "Getaways", d: "Women-only rides to a new location every 3 months.", img: trips },
