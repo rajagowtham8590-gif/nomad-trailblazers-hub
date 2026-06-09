@@ -63,6 +63,22 @@ function Services() {
         </div>
       </section>
 
+      {/* WHAT IS A GETAWAY */}
+      <section className="py-16 sm:py-24 border-t border-border">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 text-center">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
+            className="text-xs uppercase tracking-[0.3em] text-primary mb-4">Experiences</motion.div>
+          <motion.h2 initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}
+            className="font-display text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+            What is a Getaway?
+          </motion.h2>
+          <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }}
+            className="mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed">
+            It is a short motorcycle trip where we ride together to a destination, stay for a couple of days, and explore the place at a relaxed pace. It's a chance to experience the joy of riding, discover new places, connect with fellow riders, and create great memories. We organize a Getaway once every three months.
+          </motion.p>
+        </div>
+      </section>
+
     </>
   );
 }
