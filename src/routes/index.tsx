@@ -75,7 +75,7 @@ function Home() {
           </motion.h1>
           <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5, duration: 0.8 }}
             className="mt-4 sm:mt-6 max-w-xl text-base sm:text-lg text-muted-foreground">
-            From your first throttle twist to confident highway rides — Nomad Bikers Club is India's women-only riding community. Trained by women, for women.
+            From your first throttle twist to confident highway rides — Nomad Bikers Club is India's women-only training community. Trained by women, for women.
           </motion.p>
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.7, duration: 0.8 }}
             className="mt-8 sm:mt-10 flex flex-wrap gap-3 sm:gap-4">
@@ -136,8 +136,11 @@ function Home() {
           <SectionHeader eyebrow="What We Do" title="Crafted for every woman" desc="From the first wobble to confident highway riding." />
           <div className="mt-10 sm:mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
             {[
+              { icon: GaugeIconReplaced(), t: "" } as never,
+            ].length === 0 && null}
+            {[
+              { icon: Gauge, t: "Regular Training Batch", d: "3-hour group sessions for women already comfortable on a scooty — refine your skills.", img: advanced },
               { icon: Bike, t: "Beginner Training Batch", d: "Group of 5 — 20 hours over 4 days. Start from zero with confidence.", img: lessons },
-              { icon: Gauge, t: "Scooty / Bike Personal Training", d: "1-on-1 sessions at a location you choose. 2 hours/day for 7 days.", img: scooty },
               { icon: Mountain, t: "Getaways", d: "Women-only rides to a new location every 3 months.", img: trips },
             ].map((s, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
