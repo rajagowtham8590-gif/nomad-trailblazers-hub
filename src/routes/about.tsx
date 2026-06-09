@@ -76,7 +76,7 @@ function About() {
             {[
               { icon: Shield, t: "Safe Space", d: "Women trainers, women batches, zero judgement." },
               { icon: Heart, t: "Patience", d: "Everyone learns at their own pace. We meet you there." },
-              { icon: Users, t: "Sisterhood", d: "A community of women who lift each other up — on and off the road." },
+              { icon: Users, t: "Community", d: "Women who empower, support, and inspire each other—on and off the road." },
               { icon: Compass, t: "Equality", d: "The road belongs to everyone. We're making sure women take their share." },
             ].map((v, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}

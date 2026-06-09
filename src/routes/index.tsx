@@ -273,7 +273,7 @@ function Home() {
             {[
               { n: "Priya S.", t: "Learnt scooty as a complete beginner — patient trainers and a truly safe space for women." },
               { n: "Sneha I.", t: "From scared of the throttle to riding solo in 7 days. The personal training is unmatched." },
-              { n: "Aditi M.", t: "Found a sisterhood here. The getaways are unforgettable — women supporting women on the road." },
+              { n: "Aditi M.", t: "Found a community here. The getaways are unforgettable — women supporting women on the road." },
             ].map((r, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
                 className="glass rounded-3xl p-6 sm:p-7 shadow-elevated">
