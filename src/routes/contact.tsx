@@ -72,9 +72,11 @@ function Contact() {
             ))}
             <div className="rounded-2xl overflow-hidden glass shadow-elevated mt-6">
               <iframe
-                title="Map"
-                src="https://www.google.com/maps/embed/v1/place?key=&q=India"
-                className="w-full h-[260px] grayscale opacity-80"
+                title="Nomad Bikers Club location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1813367.7814872696!2d77.3750450136446!3d18.2055321154827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6beefbab05b5b287%3A0xc6d3189a832addfe!2sNomad%20Bikers%20Club!5e0!3m2!1sen!2sin!4v1781102486514!5m2!1sen!2sin"
+                className="w-full h-[260px] sm:h-[360px]"
+                style={{ border: 0 }}
+                allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
