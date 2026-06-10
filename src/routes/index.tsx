@@ -12,6 +12,14 @@ import lessons from "@/assets/lessons.jpg";
 import advanced from "@/assets/advanced.jpg";
 import scooty from "@/assets/scooty.jpg";
 import about from "@/assets/about.jpg";
+import cityBangalore from "@/assets/cities/bangalore.jpg";
+import cityChennai from "@/assets/cities/chennai.jpg";
+import cityPune from "@/assets/cities/pune.jpg";
+import cityMumbai from "@/assets/cities/mumbai.jpg";
+import cityCoimbatore from "@/assets/cities/coimbatore.jpg";
+import cityHyderabad from "@/assets/cities/hyderabad.jpg";
+import cityKochi from "@/assets/cities/kochi.jpg";
+import cityMore from "@/assets/cities/more.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -169,14 +177,14 @@ function Home() {
           <SectionHeader eyebrow="Cities We Train In" title="A community across India" desc="Find us in your city." />
           <div className="mt-10 sm:mt-14 grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5">
             {[
-              { name: "Bangalore", days: "Active", img: trips, d: "Regular, Beginner & PT" },
-              { name: "Chennai", days: "Active", img: hero, d: "Regular & PT" },
-              { name: "Pune", days: "Active", img: about, d: "Regular & PT" },
-              { name: "Mumbai", days: "Active", img: advanced, d: "Regular & PT" },
-              { name: "Coimbatore", days: "Active", img: lessons, d: "Regular & PT" },
-              { name: "Hyderabad", days: "Active", img: scooty, d: "Regular & PT" },
-              { name: "Kochi", days: "Active", img: trips, d: "Regular & PT" },
-              { name: "& more across India", days: "Coming Soon", img: hero, d: "New cities every quarter" },
+              { name: "Bangalore", days: "Active", img: cityBangalore, d: "Regular, Beginner & PT" },
+              { name: "Chennai", days: "Active", img: cityChennai, d: "Regular & PT" },
+              { name: "Pune", days: "Active", img: cityPune, d: "Regular & PT" },
+              { name: "Mumbai", days: "Active", img: cityMumbai, d: "Regular & PT" },
+              { name: "Coimbatore", days: "Active", img: cityCoimbatore, d: "Regular & PT" },
+              { name: "Hyderabad", days: "Active", img: cityHyderabad, d: "Regular & PT" },
+              { name: "Kochi", days: "Active", img: cityKochi, d: "Regular & PT" },
+              { name: "& more across India", days: "Coming Soon", img: cityMore, d: "New cities every quarter" },
             ].map((d, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: (i % 4) * 0.07 }}
                 className="group relative overflow-hidden rounded-2xl sm:rounded-3xl aspect-[3/4]">
