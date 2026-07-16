@@ -75,7 +75,7 @@ function About() {
             <div className="absolute left-3 top-2 bottom-2 w-px bg-gradient-to-b from-primary via-primary/30 to-transparent" />
             {[
               { y: "2021", t: "The Spark", d: "Founded by Maya who wanted a safe, judgement-free space for other women to learn." },
-              { y: "2022", t: "First Batches", d: "Launched beginner training batches in Bangalore and Chennai — all women, all the time." },
+              { y: "2022", t: "First Batches", d: "We expanded our team with fellow women riders who share the same vision, launching all-female beginner training batches in Bangalore and Chennai." },
               { y: "2023", t: "Personal Training", d: "Opened 1-on-1 PT so women could learn at their own pace, in their own neighbourhood." },
               { y: "2024", t: "Getaways Begin", d: "Started women-only getaways — a new destination every 3 months." },
               { y: "2025", t: "5,000+ Women", d: "Crossed five thousand women trained, and grew across 24+ Indian cities." },
@@ -131,6 +131,7 @@ function About() {
               { n: "Maya", r: "Founder & Lead Trainer" },
               { n: "Deepika", r: "Trainer & Community Lead" },
               { n: "Jayshree", r: "Trainer & Getaways Curator" },
+              { n: "Eva", r: "Trainer & Ride Leader" },
             ].map((m, i) => (
               <motion.div
                 key={i}
