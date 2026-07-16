@@ -74,7 +74,7 @@ function About() {
           <div className="relative space-y-10">
             <div className="absolute left-3 top-2 bottom-2 w-px bg-gradient-to-b from-primary via-primary/30 to-transparent" />
             {[
-              { y: "2021", t: "The Spark", d: "Founded by women riders who wanted a safe, judgement-free space for other women to learn." },
+              { y: "2021", t: "The Spark", d: "Founded by Maya who wanted a safe, judgement-free space for other women to learn." },
               { y: "2022", t: "First Batches", d: "Launched beginner training batches in Bangalore and Chennai — all women, all the time." },
               { y: "2023", t: "Personal Training", d: "Opened 1-on-1 PT so women could learn at their own pace, in their own neighbourhood." },
               { y: "2024", t: "Getaways Begin", d: "Started women-only getaways — a new destination every 3 months." },
