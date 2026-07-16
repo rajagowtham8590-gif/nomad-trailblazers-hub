@@ -151,8 +151,8 @@ function Home() {
               <motion.div key={i} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
                 className="group tilt-card relative overflow-hidden rounded-3xl glass shadow-elevated">
                 <div className="tilt-inner">
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img src={s.img} alt={s.t} loading="lazy" className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <div className="overflow-hidden">
+                  <img src={s.img} alt={s.t} loading="lazy" className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-700" />
                 </div>
                 <div className="p-5 sm:p-6">
                   <div className="inline-flex p-3 rounded-2xl bg-ember-gradient text-primary-foreground mb-4">
