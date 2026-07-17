@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { Bike, Gauge, Mountain, GraduationCap, ArrowRight, Clock, Users } from "lucide-react";
-import scooty from "@/assets/scooty.jpg";
+import scooty from "@/assets/personal-training.png.asset.json";
 import beginnerTraining from "@/assets/beginner-training.png.asset.json";
 import regularTraining from "@/assets/regular-training.png.asset.json";
 import getawaysImg from "@/assets/getaways.png.asset.json";
@@ -20,7 +20,7 @@ export const Route = createFileRoute("/services")({
 
 const services = [
   { icon: Bike, t: "Beginner Training Batch", d: "Group of 5 women, 20 hours of training spread across 4 days. Start from zero — no prior riding experience needed.", img: beginnerTraining.url, dur: "20 hrs / 4 days", level: "Group of 5" },
-  { icon: Gauge, t: "Scooty / Bike Personal Training", d: "1-on-1 training at a comfortable location of your choice. 2 hours per day for 7 days — at your own pace.", img: scooty, dur: "2 hrs × 7 days", level: "1-on-1" },
+  { icon: Gauge, t: "Scooty / Bike Personal Training", d: "1-on-1 training at a comfortable location of your choice. 2 hours per day for 7 days — at your own pace.", img: scooty.url, dur: "2 hrs × 7 days", level: "1-on-1" },
   { icon: GraduationCap, t: "Regular Training Batch", d: "3-hour group sessions for women who are already comfortable on a scooty and want to refine their skills.", img: regularTraining.url, dur: "3 hours", level: "Group of 5" },
   { icon: Mountain, t: "Getaways", d: "Women-only group rides to a new destination every 3 months. Curated routes, all-levels welcome.", img: getawaysImg.url, dur: "Every 3 months", level: "Women-only" },
 ];
