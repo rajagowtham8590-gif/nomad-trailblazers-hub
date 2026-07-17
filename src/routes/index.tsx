@@ -20,6 +20,9 @@ import cityCoimbatore from "@/assets/cities/coimbatore.jpg";
 import cityHyderabad from "@/assets/cities/hyderabad.jpg";
 import cityKochi from "@/assets/cities/kochi.jpg";
 import cityMore from "@/assets/cities/more.jpg";
+import homeRegular from "@/assets/home-regular.png.asset.json";
+import homeBeginner from "@/assets/home-beginner.png.asset.json";
+import homeGetaways from "@/assets/home-getaways.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -144,9 +147,9 @@ function Home() {
           <SectionHeader eyebrow="What We Do" title="Crafted for every woman" desc="From the first wobble to confident highway riding." />
           <div className="mt-10 sm:mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
             {[
-              { icon: Gauge, t: "Regular Training Batch", d: "3-hour group sessions for women already comfortable on a scooty — refine your skills.", img: advanced },
-              { icon: Bike, t: "Beginner Training Batch", d: "Group of 5 — 20 hours over 4 days. Start from zero with confidence.", img: lessons },
-              { icon: Mountain, t: "Getaways", d: "Women-only rides to a new location every 3 months.", img: trips },
+              { icon: Gauge, t: "Regular Training Batch", d: "3-hour group sessions for women already comfortable on a scooty — refine your skills.", img: homeRegular.url },
+              { icon: Bike, t: "Beginner Training Batch", d: "Group of 5 — 20 hours over 4 days. Start from zero with confidence.", img: homeBeginner.url },
+              { icon: Mountain, t: "Getaways", d: "Women-only rides to a new location every 3 months.", img: homeGetaways.url },
             ].map((s, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
                 className="group tilt-card relative overflow-hidden rounded-3xl glass shadow-elevated">
