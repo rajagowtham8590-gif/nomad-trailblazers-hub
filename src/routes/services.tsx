@@ -41,8 +41,8 @@ function Services() {
           {services.map((s, i) => (
             <motion.div key={i} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}
               className="group relative overflow-hidden rounded-3xl glass shadow-elevated hover:shadow-glow transition-all">
-              <div className="aspect-[16/9] overflow-hidden">
-                <img src={s.img} alt={s.t} loading="lazy" className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-700" />
+              <div className="overflow-hidden">
+                <img src={s.img} alt={s.t} loading="lazy" className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-700" />
               </div>
               <div className="p-5 sm:p-8">
                 <div className="flex items-start justify-between gap-3 mb-4 flex-wrap">
