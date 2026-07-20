@@ -100,7 +100,7 @@ function Home() {
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1 }}
             className="mt-10 sm:mt-14 hidden sm:flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-muted-foreground">
             <span className="inline-flex items-center gap-2"><Shield className="h-3.5 w-3.5 text-primary" /> Women-only batches</span>
-            <span className="inline-flex items-center gap-2"><Users className="h-3.5 w-3.5 text-primary" /> 5,000+ women trained</span>
+            <span className="inline-flex items-center gap-2"><Users className="h-3.5 w-3.5 text-primary" /> 6,000+ women trained</span>
             <span className="inline-flex items-center gap-2"><Award className="h-3.5 w-3.5 text-primary" /> Across 24+ cities</span>
           </motion.div>
         </motion.div>
@@ -126,7 +126,7 @@ function Home() {
       <section className="relative py-16 sm:py-20 border-b border-border">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-center">
           {[
-            { n: 5000, s: "+", l: "Women Trained" },
+            { n: 6000, s: "+", l: "Women Trained" },
             { n: 24, s: "+", l: "Cities" },
             { n: 100, s: "+", l: "New Bikers" },
             { n: 4.9, s: "★", l: "Avg. Rating", float: true },
@@ -261,7 +261,7 @@ function Home() {
                 { i: Users, t: "Small group batches of 5" },
                 { i: Headphones, t: "1-on-1 personal training" },
                 { i: Compass, t: "Getaways every 3 months" },
-                { i: Award, t: "5,000+ women graduated" },
+                { i: Award, t: "6,000+ women graduated" },
                 { i: MapPin, t: "24+ cities across India" },
               ].map((f, i) => (
                 <li key={i} className="flex items-center gap-3 glass rounded-xl px-3 py-2.5 text-sm">

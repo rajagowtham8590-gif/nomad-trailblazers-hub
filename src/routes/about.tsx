@@ -29,7 +29,7 @@ function About() {
           </motion.h1>
           <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}
             className="mt-4 sm:mt-6 text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
-            Since 2021, Nomad Bikers Club has been on one mission — making the road an equal space for women. We've trained 5,000+ women across 24+ cities, and we're just getting started.
+            Since 2021, Nomad Bikers Club has been on one mission — making the road an equal space for women. We've trained 6,000+ women across 24+ cities, and we're just getting started.
           </motion.p>
         </div>
       </section>
@@ -62,7 +62,7 @@ function About() {
           </motion.p>
           <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.4 }}
             className="mt-4 text-base sm:text-lg text-muted-foreground leading-relaxed">
-            Today, with 5,000+ women trained across 24+ cities, Nomad Bikers Club is more than a riding school, it's a community that empowers women to ride, explore, and grow together.
+            Today, with 6,000+ women trained across 24+ cities, Nomad Bikers Club is more than a riding school, it's a community that empowers women to ride, explore, and grow together.
           </motion.p>
         </div>
       </section>
@@ -78,7 +78,7 @@ function About() {
               { y: "2022", t: "First Batches", d: "We expanded our team with fellow women riders who share the same vision, launching all-female beginner training batches in Bangalore and Chennai." },
               { y: "2023", t: "Personal Training", d: "Opened 1-on-1 PT so women could learn at their own pace, in their own neighbourhood." },
               { y: "2024", t: "Getaways Begin", d: "Started women-only getaways — a new destination every 3 months." },
-              { y: "2025", t: "5,000+ Women", d: "Crossed five thousand women trained, and grew across 24+ Indian cities." },
+              { y: "2025", t: "6,000+ Women", d: "Crossed six thousand women trained, and grew across 24+ Indian cities." },
             ].map((m, i) => (
               <motion.div key={i} initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }}
                 className="relative pl-12">
